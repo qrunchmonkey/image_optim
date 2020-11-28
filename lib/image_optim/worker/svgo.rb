@@ -20,6 +20,7 @@ class ImageOptim
         args = %W[
           --input #{src}
           --output #{dst}
+          --pretty
         ]
         disable_plugins.each do |plugin_name|
           args.unshift "--disable=#{plugin_name}"
